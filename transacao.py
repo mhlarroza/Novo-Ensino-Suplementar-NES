@@ -10,7 +10,7 @@ class Transacao:
         :param categoria: Categoria da transação (por exemplo, "Alimentação")
         :param descricao: Descrição opcional da transação (por exemplo, "Compra no mercado")
         """
-        self.valor = valor  # Valor da transação
+        self.valor = valor          # Valor da transação
         self.data = datetime.now()  # Data e hora da transação (é definida no momento da criação)
         self.categoria = categoria  # Categoria da transação (como "Alimentação", "Transporte", etc)
         self.descricao = descricao  # Descrição da transação (opcional)
@@ -30,4 +30,4 @@ class Transacao:
         :param atributos: Argumentos nomeados com os novos valores dos atributos da transação.
         """
         for chave, valor in atributos.items():  # Percorre os atributos fornecidos
-            setattr(self, chave, valor)  # Atualiza o valor do atributo da transação com o novo valor
+            setattr(self, chave, valor)         # Atualiza o valor do atributo da transação com o novo valor
